@@ -97,8 +97,9 @@ p {
     font-size: clamp(1rem, 4.4vmin, 2rem);
 }
 
-.weather-emoji {
-    font-size: clamp(4rem, 16.8vmin, 7.5rem);
+.weather-icon {
+    width: clamp(8rem, 33vmin, 15rem);
+    aspect-ratio: 1 / 1;
 }
 
 .error-display {

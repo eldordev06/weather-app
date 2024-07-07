@@ -15,14 +15,17 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <form class="weather-form">
+            <form name="weather-form"
+                  class="weather-form">
                 <input type="text"
                        class="city-input"
-                       placeholder="Enter city">
+                       placeholder="Enter city"
+                       name="city-input">
                 <button type="submit"
                         class="submit-btn">Get Weather</button>
             </form>
-            <div class="card" style="display: none;">
+            <div class="card"
+                 style="display: none;">
                 <h1 class="city-display">City Name</h1>
                 <p class="temp-display">12℃</p>
                 <p class="humidity-display">Humidity: 50%</p>

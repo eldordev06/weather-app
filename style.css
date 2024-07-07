@@ -108,3 +108,24 @@ p {
     font-weight: bold;
     color: hsla(0, 0%, 0%, 0.75);
 }
+
+.marquee {
+    width: 90%;
+    margin: 0 5%;
+    overflow: hidden;
+}
+
+.city-display {
+    animation: 8s slide linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

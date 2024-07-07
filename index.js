@@ -36,7 +36,9 @@ function displayWeatherData(data) {
     const { name, main: { temp, humidity }, weather: [{ main, icon }] } = data;
 
     card.innerHTML = `
-        <h1 class="city-display">${name}</h1>
+        <div class="marquee">
+            <h1 class="city-display">${name}</h1>
+        </div>
         <p class="temp-display">${((temp - 273.15)).toFixed(1)}℃</p>
         <p class="humidity-display">Humidity: ${humidity}%</p>
         <p class="descr-display">${main}</p>

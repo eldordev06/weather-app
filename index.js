@@ -15,7 +15,7 @@ weatherForm.onsubmit = async event => {
             const data = await getWeatherData(city);
             displayWeatherData(data);
         } catch (error) {
-            displayError(error)
+            displayError(error);
         }
     } else {
         displayError("Please enter a city");
@@ -52,4 +52,5 @@ function displayError(msg) {
     card.innerHTML = `
         <p class="error-display">${msg}</p>
     `;
+    card.style.display = "block";
 } 

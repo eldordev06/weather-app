@@ -8,7 +8,7 @@ const apiKey = "841df6e75d20f450a5f6d62ec281853b";
 weatherForm.onsubmit = async event => {
     event.preventDefault();
 
-    const city = cityInput.value;
+    const city = cityInput.value.trim();
 
     if (city) {
         try {
